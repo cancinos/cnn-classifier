@@ -63,6 +63,28 @@ Once you selected this option you will see how a neural network starts to train 
 of hidden layers that we are adding at the classification segment of the algorithm. Here what we are doing is just presenting a dataset of matrix of pixels (all the images 
 in MNIST FASHION) and ask the neural net to recognize 'where' they are without giving it much information about 'what' they are or 'what' they represent of the image. 
 
+**Accuracy vs. Epochs**
+<p align="center">
+  <img width="623" height="473" src="https://github.com/cancinos/cnn-classifier/blob/master/layers_accuracy_1.PNG">
+</p>
+
+As you can see in the image the model performs better when you're classifying with just two layers, and they started to converge when you use more than 15 epochs. 
+That's the reason why I decide to used between one or two layers in the classification segment and just to make sure that it converges we use 25 epochs.
+
+**Validation accuracy vs. Epochs**
+<p align="center">
+  <img width="623" height="473" src="https://github.com/cancinos/cnn-classifier/blob/master/layers_val_accuracy_1.PNG">
+</p>
+
+Here is important to denote the poor performance of validation using 5 fully connected layers, the other models were behaving similarly.
+
+**Test accuracy vs. Epochs**
+<p align="center">
+  <img width="623" height="473" src="https://github.com/cancinos/cnn-classifier/blob/master/layers_val_accuracy_1.PNG">
+</p>
+
+And finally, when we test the 3-fully-connected-layer and the 5-fully-connected-layer behaved similarly, but of all them with an accuracy above the 0.85.
+
 2. **Check a 'Layer vs. Accuracy' using CNNs and dropout layers**
 
 3. **Check how on of our trained CNNs performs**
