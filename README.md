@@ -80,12 +80,33 @@ Here is important to denote the poor performance of validation using 5 fully con
 
 **Test accuracy vs. Epochs**
 <p align="center">
-  <img width="623" height="473" src="https://github.com/cancinos/cnn-classifier/blob/master/layers_val_accuracy_1.PNG">
+  <img width="623" height="473" src="https://github.com/cancinos/cnn-classifier/blob/master/layers_test_accuracy_1.PNG">
 </p>
 
 And finally, when we test the 3-fully-connected-layer and the 5-fully-connected-layer behaved similarly, but of all them with an accuracy above the 0.85.
 
 2. **Check a 'Layer vs. Accuracy' using CNNs and dropout layers**
+
+This analysis was very similar to the one before, the only difference is that I added a feature extraction part, using a dropout layer and also a convolutional layer.
+The main idea here is understanding how telling the model that there are important features or characteristics on every image, and that they are not just pixel in a matrix.
+The results are the following:
+
+**Accuracy vs. Epochs**
+<p align="center">
+  <img width="623" height="473" src="https://github.com/cancinos/cnn-classifier/blob/master/layers_accuracy_2.PNG">
+</p>
+
+**Validation accuracy vs. Epochs**
+<p align="center">
+  <img width="623" height="473" src="https://github.com/cancinos/cnn-classifier/blob/master/layers_val_accuracy_2.PNG">
+</p>
+
+**Test accuracy vs. Epochs**
+<p align="center">
+  <img width="623" height="473" src="https://github.com/cancinos/cnn-classifier/blob/master/layers_test_accuracy_2.PNG">
+</p>
+
+Whats interesting here is that, in contrast with the previous analysis, when I test my model I got better performance using 1, 2 or 4 layers, but a worst one with 3 and 5 layers.
 
 3. **Check how on of our trained CNNs performs**
 
